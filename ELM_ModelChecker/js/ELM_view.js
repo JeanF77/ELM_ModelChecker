@@ -354,7 +354,7 @@ function view_init () {
    });
 
    Handlebars.registerHelper("attribute_ismultivalued", function () { // ---- To display attribute Multi Value status
-      return this.get_multiValuedText();
+      return this.is_multiValued() ? "True" : "False";
    });
 
    Handlebars.registerHelper("artifact_getattribute", function () { // ---- To display artifact type attributes list
