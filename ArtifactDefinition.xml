@@ -1,0 +1,110 @@
+<rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksmV9JEe6NQOe6jYX5SQ">
+    <rm:hasWorkflowAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdEl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdKF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2Dl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2A19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdGl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdGV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2EV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdK19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdE19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ"/>
+    <rm:attributeOrdering>https://elm702/rm/types/AD_j8bdI19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdK19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2EV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdLF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdEl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2DV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdGF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2BV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdJ19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdH19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdE19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdJF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdF19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdGl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2D19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdG19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdGV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2C19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdKF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2Dl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2B19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2CF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2CV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdJl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdKV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdKl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2A19JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdKV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2BV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdF19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdG19JEe6NQOe6jYX5SQ"/>
+    <dcterms:title>Requirement</dcterms:title>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2CV9JEe6NQOe6jYX5SQ"/>
+    <rm:actionId>1760919372-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdKl9JEe6NQOe6jYX5SQ"/>
+    <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2D19JEe6NQOe6jYX5SQ"/>
+    <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+    <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdLF9JEe6NQOe6jYX5SQ"/>
+    <dcterms:description></dcterms:description>
+    <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdH19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdI19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ"/>
+    <rm:inCreationMenu>true</rm:inCreationMenu>
+    <rm:objectTypeRole rdf:resource="http://www.ibm.com/xmlns/rdm/types/ObjectTypeRoles#PreferredArtifactType"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJ19JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2CF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2C19JEe6NQOe6jYX5SQ"/>
+    <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/requirementred"/>
+    <dcterms:created>2023-09-30T04:26:45.789Z</dcterms:created>
+    <dcterms:modified>2023-09-30T04:26:45.789Z</dcterms:modified>
+    <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#Requirement"/>
+    <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2B19JEe6NQOe6jYX5SQ"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2DV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdGF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFl9JEe6NQOe6jYX5SQ"/>
+</rm:ObjectType>
+
+<rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksm19JEe6NQOe6jYX5SQ">
+    <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ"/>
+    <rm:preferredModuleContent rdf:parseType="Resource">
+        <rm:preferredArtifactTypes>
+            <rdf:Seq>
+                <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksmF9JEe6NQOe6jYX5SQ"/>
+                <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksmV9JEe6NQOe6jYX5SQ"/>
+                <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksml9JEe6NQOe6jYX5SQ"/>
+                <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksnV9JEe6NQOe6jYX5SQ"/>
+                <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksnF9JEe6NQOe6jYX5SQ"/>
+            </rdf:Seq>
+        </rm:preferredArtifactTypes>
+    </rm:preferredModuleContent>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2Bl9JEe6NQOe6jYX5SQ"/>
+    <dcterms:title>Specification Document</dcterms:title>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+    <dcterms:created>2023-09-30T04:26:45.810Z</dcterms:created>
+    <rm:hasWorkflowAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow"/>
+    <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/specifications"/>
+    <dcterms:modified>2023-09-30T04:26:45.810Z</dcterms:modified>
+    <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    <rm:inCreationMenu>true</rm:inCreationMenu>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+    <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdEF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+    <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    <rm:actionId>562972724-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2Cl9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdEV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2DF9JEe6NQOe6jYX5SQ"/>
+    <dcterms:description></dcterms:description>
+    <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+    <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJV9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ"/>
+    <rm:hasAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow"/>
+    <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Module"/>
+    <rm:attributeOrdering>https://elm702/rm/types/AD_j8bdJV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2Bl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdEF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2Cl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2DF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdEV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+    <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#SpecificationDocument"/>
+</rm:ObjectType>

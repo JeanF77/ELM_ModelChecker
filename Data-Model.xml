@@ -1,0 +1,2751 @@
+<rdf:RDF
+    xmlns:rmWorkflow="http://www.ibm.com/xmlns/rdm/workflow/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:jfs="http://jazz.net/xmlns/foundation/1.0/"
+    xmlns:h="http://www.w3.org/TR/REC-html40"
+    xmlns:xs="http://schema.w3.org/xs/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rm="http://www.ibm.com/xmlns/rdm/rdf/"
+    xmlns:rmTypes="http://www.ibm.com/xmlns/rdm/types/">
+    <rm:LinkType rdf:about="https://elm702/rm/types/LT_j6vbA19JEe6NQOe6jYX5SQ">
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/linktypes#analysis"/>
+        <dcterms:description>ANA&lt;-&gt;EXI</dcterms:description>
+        <rm:subjectToObjectLabel>Analyzes</rm:subjectToObjectLabel>
+        <dcterms:title>Analysis</dcterms:title>
+        <dcterms:modified>2023-09-30T04:26:46.008Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:objectToSubjectLabel>Analyzed by</rm:objectToSubjectLabel>
+        <rm:actionId>288605479-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:created>2023-09-30T04:26:46.008Z</dcterms:created>
+    </rm:LinkType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow">
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow/attrtype"/>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow#Requirements_Workflow.state.s0">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Requirements_Workflow.state.s0</rdf:value>
+                        <dcterms:title>In modification</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow#Requirements_Workflow.state.s0"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow#Requirements_Workflow.state.s1">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Requirements_Workflow.state.s1</rdf:value>
+                        <dcterms:title>In validation</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow#Requirements_Workflow.state.s1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow#Requirements_Workflow.state.s2">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Requirements_Workflow.state.s2</rdf:value>
+                        <dcterms:title>Applicable</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow#Requirements_Workflow.state.s2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow#Requirements_Workflow.state.s3">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Requirements_Workflow.state.s3</rdf:value>
+                        <dcterms:title>Applicable frozen</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow#Requirements_Workflow.state.s3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow#Requirements_Workflow.state.s4">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Requirements_Workflow.state.s4</rdf:value>
+                        <dcterms:title>Terminated</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow#Requirements_Workflow.state.s4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow#Requirements_Workflow.state.s5">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Requirements_Workflow.state.s5</rdf:value>
+                        <dcterms:title>Obsolete</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow#Requirements_Workflow.state.s5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:description></dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:workflow>
+        <dcterms:title>Requirements Workflow</dcterms:title>
+        <dcterms:modified>2023-07-28T07:21:38.773Z</dcterms:modified>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdKl9JEe6NQOe6jYX5SQ">
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:45.601Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationTopic"/>
+        <rm:actionId>1894663588-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.601Z</dcterms:modified>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description>Main subject of requirement verification.</dcterms:description>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:title>Verification Topic</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdJF9JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:title>QDate</dcterms:title>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#QDate"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>212360661-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:created>2023-09-30T04:26:45.557Z</dcterms:created>
+        <dcterms:description>TRC attribute for requirements quality assessment.</dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:modified>2023-09-30T04:26:45.557Z</dcterms:modified>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2Dl9JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:modified>2023-09-30T04:26:45.320Z</dcterms:modified>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6PEsF9JEe6NQOe6jYX5SQ"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:multiValued>
+        <dcterms:created>2023-09-30T04:26:45.320Z</dcterms:created>
+        <dcterms:description>Verification activities can be performed at different levels : system, subsystems, upper system</dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationLevel"/>
+        <dcterms:title>Verification Level</dcterms:title>
+        <rm:actionId>812869859-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2CF9JEe6NQOe6jYX5SQ">
+        <dcterms:description>Requirement verification methods.</dcterms:description>
+        <rm:actionId>2124378725-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationMethods"/>
+        <dcterms:title>Verification Methods</dcterms:title>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:created>2023-09-30T04:26:45.256Z</dcterms:created>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.256Z</dcterms:modified>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2DV9JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:45.295Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>209152588-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>Used to validate that the requirement is well traced by the downstream strata (inbound link on the requirement)</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:45.295Z</dcterms:created>
+        <dcterms:title>Flow Down Status</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#FlowDownStatus"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6NPgF9JEe6NQOe6jYX5SQ"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdKV9JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:created>2023-09-30T04:26:45.594Z</dcterms:created>
+        <rm:actionId>1680292977-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:title>Verification Strategy</dcterms:title>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:description>For each requirement, the verification strategy will determine the most relevant level of action to perform.</dcterms:description>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationStrategy"/>
+        <dcterms:modified>2023-09-30T04:26:45.594Z</dcterms:modified>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6N2kF9JEe6NQOe6jYX5SQ">
+        <dcterms:description></dcterms:description>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:modified>2023-09-30T04:26:44.841Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationStatus"/>
+        <dcterms:title>T-Validation Status</dcterms:title>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6N2kF9JEe6NQOe6jYX5SQ#_j6N2kV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Passed</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationStatus1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6N2kF9JEe6NQOe6jYX5SQ#_j6N2kl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Failed</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationStatus2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:created>2023-09-30T04:26:44.841Z</dcterms:created>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow">
+        <rm:range rdf:resource="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow"/>
+        <dcterms:created></dcterms:created>
+        <dcterms:title>State (Specification Workflow)</dcterms:title>
+        <rm:matchingProperty rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow"/>
+        <rm:actionId>1989102523</rm:actionId>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:description></dcterms:description>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflowTitle>Specification Workflow</rm:workflowTitle>
+        <dcterms:modified></dcterms:modified>
+        <dc:creator></dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:workflow>
+        <dc:contributor></dc:contributor>
+    </rm:AttributeDefinition>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksmF9JEe6NQOe6jYX5SQ">
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:actionId>1986361772-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:title>Heading</dcterms:title>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2EF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/headingblue"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+        <dcterms:description></dcterms:description>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:45.765Z</dcterms:created>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <dcterms:modified>2023-09-30T04:26:45.765Z</dcterms:modified>
+        <rm:attributeOrdering>https://elm702/rm/types/AD_j8a2EF9JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rm:objectTypeRole rdf:resource="http://www.ibm.com/xmlns/rdm/types/ObjectTypeRoles#ModuleHeading"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#Heading"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+    </rm:ObjectType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:modified>2023-09-30T04:26:44.746Z</dcterms:modified>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ#_j6I-EV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Analysis</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationMethods2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ#_j6I-El9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Engineering Review</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationMethods4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ#_j6I-E19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>Similarity (Service Experience)</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationMethods5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ#_j6I-FF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Simulation</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationMethods3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ#_j6I-FV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >6</rdf:value>
+                        <dcterms:title>Test</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationTest"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ#_j6I-Fl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Traceability / Rationale</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationMethods1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:created>2023-09-30T04:26:44.746Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationMethods"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>T-Validation Methods</dcterms:title>
+    </rm:AttributeType>
+    <rm:LinkType rdf:about="https://elm702/rm/types/LT_j6vbAl9JEe6NQOe6jYX5SQ">
+        <dcterms:description>REQ&lt;-&gt;REQ, REQ&lt;-&gt;NEED</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:46.001Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/linktypes#satisfaction"/>
+        <rm:objectToSubjectLabel>Satisfied by</rm:objectToSubjectLabel>
+        <rm:actionId>2084852900-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:modified>2023-09-30T04:26:46.001Z</dcterms:modified>
+        <dcterms:title>Satisfaction</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:subjectToObjectLabel>Satisfies</rm:subjectToObjectLabel>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2Cl9JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description></dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DocumentType"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:actionId>663527109-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:created>2023-09-30T04:26:45.272Z</dcterms:created>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:modified>2023-09-30T04:26:45.272Z</dcterms:modified>
+        <dcterms:title>Document Type</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2EV9JEe6NQOe6jYX5SQ">
+        <rm:actionId>743701975-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:created>2023-09-30T04:26:45.345Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DerivedContentImpactAnalysis"/>
+        <dcterms:modified>2023-09-30T04:26:45.345Z</dcterms:modified>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description>Safety and/or upper system acceptance of derived requirements.</dcterms:description>
+        <dcterms:title>Derived Content Impact Analysis</dcterms:title>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ">
+        <dcterms:created>2023-09-30T04:26:45.223Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:title>Validation Results Comment</dcterms:title>
+        <dcterms:description>Free text providing substantiation information on the validation result. Such information is provided when the validation result needs complementary justification according to evidences provided.</dcterms:description>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.223Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ValidationResultsComment"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:actionId>571830985-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdIF9JEe6NQOe6jYX5SQ">
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:modified>2023-09-30T04:26:45.530Z</dcterms:modified>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>External reference to a document or requirements for which Safran is not responsible (customer reference, etc.)</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:45.530Z</dcterms:created>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:title>External Reference</dcterms:title>
+        <rm:actionId>1547640691-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ExternalReference"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdE19JEe6NQOe6jYX5SQ">
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#QNumber"/>
+        <dcterms:description>TRC attribute for requirements quality assessment.</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:45.377Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:modified>2023-09-30T04:26:45.377Z</dcterms:modified>
+        <rm:actionId>176211986-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:title>QNumber</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksnF9JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:45.818Z</dcterms:modified>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <dcterms:title>Term</dcterms:title>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <dcterms:created>2023-09-30T04:26:45.818Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#Term"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/term"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rm:objectTypeRole rdf:resource="http://www.ibm.com/xmlns/rdm/types/ObjectTypeRoles#GlossaryTerm"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <rm:actionId>1697620124-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/AlternateSpelling"/>
+        <rm:attributeOrdering></rm:attributeOrdering>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description></dcterms:description>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+    </rm:ObjectType>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksml9JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ"/>
+        <rm:actionId>676282398-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:attributeOrdering>https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+        <dcterms:modified>2023-09-30T04:26:45.799Z</dcterms:modified>
+        <dcterms:description></dcterms:description>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/diagram-blue"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <dcterms:created>2023-09-30T04:26:45.799Z</dcterms:created>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#Diagrams"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <dcterms:title>Diagrams</dcterms:title>
+    </rm:ObjectType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdIl9JEe6NQOe6jYX5SQ">
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DerivedContentImpactStatus"/>
+        <dcterms:created>2023-09-30T04:26:45.545Z</dcterms:created>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6HI4F9JEe6NQOe6jYX5SQ"/>
+        <dcterms:description>Evaluate supposed impact of the requirement on the Upper-System’s needs and safety aspects (IMPACT SUSPECTED / NO IMPACT TO BE CONFIRMED). 
+Update the status with upper level system to confirm impact analysis (NO IMPACT OR IMPACT ACCEPTED / IMPACT NOT ACCEPTED).</dcterms:description>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>481342041-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:modified>2023-09-30T04:26:45.545Z</dcterms:modified>
+        <dcterms:title>Derived Content Impact Status</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2BV9JEe6NQOe6jYX5SQ">
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>Design Parameters of the design which structure architecture system. As long as they are in an authorized range, the design can retain the same architecture hypothesis but beyond a threshold value, the design and architecture is questioned in a major way. Fixed by needs or requirements at the moment considered, prescribed by the environment of the perimeter considered, they allow to raise constraints to the higher system.</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:45.232Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#KeyDesignDriver"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.232Z</dcterms:modified>
+        <dcterms:title>Key Design Driver</dcterms:title>
+        <rm:actionId>35899599-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2EF9JEe6NQOe6jYX5SQ">
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DALLevel"/>
+        <dcterms:created>2023-09-30T04:26:45.338Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.338Z</dcterms:modified>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:title>DAL Level</dcterms:title>
+        <rm:actionId>1725727079-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:description>Design Assurance Level</dcterms:description>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdF19JEe6NQOe6jYX5SQ">
+        <dcterms:description>TRC attribute for requirements quality assessment.</dcterms:description>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#QSummary"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:created>2023-09-30T04:26:45.436Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:45.436Z</dcterms:modified>
+        <dcterms:title>QSummary</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:actionId>1141963794-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ">
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6N2kF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:description>Resulting status of the validation activities. It is the summary status of all the validation steps associated to each method and evidence. This is the result of the Engineering review of the validation artefacts as required by the the validation plan.
+Passed: When all validation activities are achieved and all validation steps results are considered as “Passed” and then concluding that the requirement/document is valid (correct, complete and consistent).
+Failed : When all validation activities are achieved and at least one of the validation steps result is considered as “Failed” and then concluding that the requirement/document is not valid (correct, complete and consistent).</dcterms:description>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:actionId>1930047888-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:created>2023-09-30T04:26:45.485Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:45.485Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>Validation Status</dcterms:title>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ValidationStatus"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:title>T-Requirement Class</dcterms:title>
+        <dcterms:created>2023-09-30T04:26:44.730Z</dcterms:created>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:modified>2023-09-30T04:26:44.730Z</dcterms:modified>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXBV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Functional</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXBl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Monitoring</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXB19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Performance</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXCF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Security</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXCV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>Reliability</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXCl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >6</rdf:value>
+                        <dcterms:title>Mainainability</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass6"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ#_j6IXC19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >7</rdf:value>
+                        <dcterms:title>Interchangeability / Compatibility</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass7"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-RequirementClass"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description></dcterms:description>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6PEsF9JEe6NQOe6jYX5SQ">
+        <dcterms:description></dcterms:description>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationLevel"/>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PEsF9JEe6NQOe6jYX5SQ#_j6PEsV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>System</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationLevel1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PEsF9JEe6NQOe6jYX5SQ#_j6PEsl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Lower System</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationLevel2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PEsF9JEe6NQOe6jYX5SQ#_j6PEs19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Upper System</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationLevel3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:modified>2023-09-30T04:26:44.879Z</dcterms:modified>
+        <dcterms:created>2023-09-30T04:26:44.879Z</dcterms:created>
+        <dcterms:title>T-Verification Level</dcterms:title>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6OdpV9JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:44.867Z</dcterms:modified>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6OdpV9JEe6NQOe6jYX5SQ#_j6Odpl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Fully covered</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationCoverageStatus1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6OdpV9JEe6NQOe6jYX5SQ#_j6Odp19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Not fully covered</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationCoverageStatus2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationCoverageStatus"/>
+        <dcterms:created>2023-09-30T04:26:44.867Z</dcterms:created>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>T-Verification Coverage Status</dcterms:title>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdKF9JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:title>Verification Coverage Status</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description>Coverage status of the requirement by its test cases and their associated test procedures</dcterms:description>
+        <dcterms:modified>2023-09-30T04:26:45.587Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationCoverageStatus"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:created>2023-09-30T04:26:45.587Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6OdpV9JEe6NQOe6jYX5SQ"/>
+        <rm:actionId>186057904-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksnV9JEe6NQOe6jYX5SQ">
+        <dcterms:description></dcterms:description>
+        <dcterms:modified>2023-09-30T04:26:45.827Z</dcterms:modified>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <dcterms:created>2023-09-30T04:26:45.827Z</dcterms:created>
+        <rm:attributeOrdering>https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#Information"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/text2"/>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ"/>
+        <rm:actionId>2134163223-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:objectTypeRole rdf:resource="http://www.ibm.com/xmlns/rdm/types/ObjectTypeRoles#PreferredArtifactType"/>
+        <dcterms:title>Information</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:ObjectType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ">
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ#_j6Rg8V9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Traceability &amp; Rationale OK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ#_j6Rg8l9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Traceability &amp; Rationale NOK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ#_j6Rg819JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Correctness OK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ#_j6Rg9F9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Correctness NOK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ#_j6Rg9V9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>Completeness and Consistency OK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ#_j6Rg9l9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >6</rdf:value>
+                        <dcterms:title>Completeness and Consistency NOK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks6"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:created>2023-09-30T04:26:44.975Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:title>T-Validation Checks</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-ValidationChecks"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:modified>2023-09-30T04:26:44.975Z</dcterms:modified>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:description></dcterms:description>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdGV9JEe6NQOe6jYX5SQ">
+        <dcterms:description>Check list used to assess the requirement validation.</dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6Rg8F9JEe6NQOe6jYX5SQ"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:title>Validation Checks</dcterms:title>
+        <dcterms:created>2023-09-30T04:26:45.451Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ValidationChecks"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:multiValued>
+        <dcterms:modified>2023-09-30T04:26:45.451Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:actionId>773260331-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdJV9JEe6NQOe6jYX5SQ">
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ConfigurationItemName"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:title>Configuration Item Name</dcterms:title>
+        <dcterms:modified>2023-09-30T04:26:45.564Z</dcterms:modified>
+        <rm:actionId>944027440-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:created>2023-09-30T04:26:45.564Z</dcterms:created>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:description>N/A</dcterms:description>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:44.777Z</dcterms:modified>
+        <dcterms:title>T-DataClassification</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description></dcterms:description>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DataClassification"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:created>2023-09-30T04:26:44.777Z</dcterms:created>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ#_j6KMMV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>C1-PUBLIC</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#T-DataClassification-C1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ#_j6KMMl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>C2-CONFIDENTIAL</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#T-DataClassification-C2-Confidential"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ#_j6KMM19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>C3-CRITICAL</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#T-DataClassification-C3-Critical"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ#_j6KMNF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>DR-SF (DIFFUSION RESTREINTE - SPECIAL FRANCE)</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#T-DataClassification-DRSF"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ#_j6KMNV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>DR (DIFFUSION RESTREINTE)</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#T-DataClassification-DR"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2C19JEe6NQOe6jYX5SQ">
+        <dcterms:description></dcterms:description>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>Verifiability</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.280Z</dcterms:modified>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6PEtF9JEe6NQOe6jYX5SQ"/>
+        <rm:actionId>362464937-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:created>2023-09-30T04:26:45.280Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Verifiability"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdK19JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.607Z</dcterms:modified>
+        <dcterms:description>Sets of requirements to be managed</dcterms:description>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:created>2023-09-30T04:26:45.607Z</dcterms:created>
+        <dcterms:title>Batch</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Batch"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:actionId>1250990549-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="https://elm702/rm/types/LT_j6vbAV9JEe6NQOe6jYX5SQ">
+        <dcterms:description>Artifact and Module Reference</dcterms:description>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:title>BCI Reference</dcterms:title>
+        <rm:objectToSubjectLabel>Is refered by</rm:objectToSubjectLabel>
+        <rm:subjectToObjectLabel>Refers to</rm:subjectToObjectLabel>
+        <dcterms:modified>2023-09-30T04:26:45.993Z</dcterms:modified>
+        <dcterms:created>2023-09-30T04:26:45.993Z</dcterms:created>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>325901509-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/linktypes/moduleReference"/>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="https://elm702/rm/types/LT_j6vbBF9JEe6NQOe6jYX5SQ">
+        <dcterms:created>2023-09-30T04:26:46.017Z</dcterms:created>
+        <rm:actionId>1013908624-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:description>Artifact and Design Parameter</dcterms:description>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:subjectToObjectLabel>Includes</rm:subjectToObjectLabel>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>KDD Reference</dcterms:title>
+        <dcterms:modified>2023-09-30T04:26:46.017Z</dcterms:modified>
+        <rm:objectToSubjectLabel>Included By</rm:objectToSubjectLabel>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/linktypes/KDDReference"/>
+    </rm:LinkType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ">
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationMethods"/>
+        <dcterms:title>T-Verification Methods</dcterms:title>
+        <dcterms:modified>2023-09-30T04:26:44.818Z</dcterms:modified>
+        <dcterms:created>2023-09-30T04:26:44.818Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ#_j6MocV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Analysis</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationMethods1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ#_j6Mocl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Inspection</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationMethods2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ#_j6Moc19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>Other</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationMethods5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ#_j6ModF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >6</rdf:value>
+                        <dcterms:title>Similarity (Service Experience)</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationSimilarity"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ#_j6ModV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Supplier verifications</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationMethods3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6MocF9JEe6NQOe6jYX5SQ#_j6Modl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Test</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationMethods4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description></dcterms:description>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdEF9JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>Document Signatories</dcterms:title>
+        <rm:defaultValue rdf:parseType="Resource">
+            <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+      >Compiled by:
+Function or company|First name LAST NAME
+===
+Checked by:
+Function or company|First name LAST NAME
+===
+Approved by:
+Function or company|First name LAST NAME
+===
+Authorized by:
+Function or company|First name LAST NAME
+===</rdf:value>
+        </rm:defaultValue>
+        <dcterms:created>2023-09-30T04:26:45.353Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>List of signatories of the document as per the following model :
+Compiled by:
+Function or company|First name LAST NAME
+===
+Checked by:
+Function or company|First name LAST NAME
+===
+Approved by:
+Function or company|First name LAST NAME
+===
+Authorized by:
+Function or company|First name LAST NAME
+===</dcterms:description>
+        <dcterms:modified>2023-09-30T04:26:45.353Z</dcterms:modified>
+        <rm:actionId>562456182-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DocumentSignatories"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ">
+        <dcterms:description>Explanatory wording or reference to the validation substantiation records or reports providing evidence of the correctness, completeness and consistency of the document/requirement to be validated. 
+Validation evidence or artefact shall be provided according to the validation strategy. Meaning that the evidence of each activity conducted in front of each validation method shall be provided as well as the associated result.</dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ValidationResult"/>
+        <rm:actionId>764108415-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:modified>2023-09-30T04:26:45.394Z</dcterms:modified>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:created>2023-09-30T04:26:45.394Z</dcterms:created>
+        <dcterms:title>Validation Result</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2A19JEe6NQOe6jYX5SQ">
+        <dcterms:created>2023-09-30T04:26:45.127Z</dcterms:created>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.127Z</dcterms:modified>
+        <dcterms:title>Version</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:description>Revision Number incremented when the artifact has formally changed and been released (can be associated to a letter or digit for intermediate states between two releases).</dcterms:description>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Version"/>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:actionId>1339674025-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdH19JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:45.523Z</dcterms:modified>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:actionId>56539165-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:description>TRC attribute for requirements quality assessment.</dcterms:description>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#QLevel"/>
+        <dcterms:title>QLevel</dcterms:title>
+        <dcterms:created>2023-09-30T04:26:45.523Z</dcterms:created>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksl19JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:modified>2023-09-30T04:26:45.744Z</dcterms:modified>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <dcterms:description></dcterms:description>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <dcterms:title>Authoring Guidance</dcterms:title>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <dcterms:created>2023-09-30T04:26:45.744Z</dcterms:created>
+        <rm:actionId>557665213-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/guideline-doc"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#AuthoringGuidance"/>
+        <rm:attributeOrdering></rm:attributeOrdering>
+    </rm:ObjectType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow">
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow/attrtype"/>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow#Assumptions_Workflow.state.s0">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Assumptions_Workflow.state.s0</rdf:value>
+                        <dcterms:title>In modification</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow#Assumptions_Workflow.state.s0"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow#Assumptions_Workflow.state.s1">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Assumptions_Workflow.state.s1</rdf:value>
+                        <dcterms:title>In review</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow#Assumptions_Workflow.state.s1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow#Assumptions_Workflow.state.s2">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Assumptions_Workflow.state.s2</rdf:value>
+                        <dcterms:title>Validated</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow#Assumptions_Workflow.state.s2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow#Assumptions_Workflow.state.s3">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Assumptions_Workflow.state.s3</rdf:value>
+                        <dcterms:title>Confirmed</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow#Assumptions_Workflow.state.s3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow#Assumptions_Workflow.state.s4">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Assumptions_Workflow.state.s4</rdf:value>
+                        <dcterms:title>Obsolete</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow#Assumptions_Workflow.state.s4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:description></dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:workflow>
+        <dcterms:title>Assumptions Workflow</dcterms:title>
+        <dcterms:modified>2023-07-28T07:21:38.773Z</dcterms:modified>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ">
+        <dcterms:description></dcterms:description>
+        <dcterms:modified>2023-09-30T04:26:44.906Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:44.906Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DALLevel"/>
+        <dcterms:title>T-DAL Level</dcterms:title>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ#_j6QS0F9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>DAL A</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DALLevel1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ#_j6QS0V9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>DAL B</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DALLevel2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ#_j6QS0l9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>DAL C</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DALLevel3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ#_j6QS019JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>DAL D</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DALLevel4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PrwF9JEe6NQOe6jYX5SQ#_j6QS1F9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>DAL E</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DALLevel5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    </rm:AttributeType>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksm19JEe6NQOe6jYX5SQ">
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ"/>
+        <rm:preferredModuleContent rdf:parseType="Resource">
+            <rm:preferredArtifactTypes>
+                <rdf:Seq>
+                    <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksmF9JEe6NQOe6jYX5SQ"/>
+                    <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksmV9JEe6NQOe6jYX5SQ"/>
+                    <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksml9JEe6NQOe6jYX5SQ"/>
+                    <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksnV9JEe6NQOe6jYX5SQ"/>
+                    <rdf:li rdf:resource="https://elm702/rm/types/OT_j9ksnF9JEe6NQOe6jYX5SQ"/>
+                </rdf:Seq>
+            </rm:preferredArtifactTypes>
+        </rm:preferredModuleContent>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2Bl9JEe6NQOe6jYX5SQ"/>
+        <dcterms:title>Specification Document</dcterms:title>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <dcterms:created>2023-09-30T04:26:45.810Z</dcterms:created>
+        <rm:hasWorkflowAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow"/>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/specifications"/>
+        <dcterms:modified>2023-09-30T04:26:45.810Z</dcterms:modified>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdEF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>562972724-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2Cl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdEV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2DF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:description></dcterms:description>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow"/>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Module"/>
+        <rm:attributeOrdering>https://elm702/rm/types/AD_j8bdJV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2Bl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdEF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2Cl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2DF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdEV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#SpecificationDocument"/>
+    </rm:ObjectType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2B19JEe6NQOe6jYX5SQ">
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:actionId>487905903-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:created>2023-09-30T04:26:45.247Z</dcterms:created>
+        <dcterms:title>Verification Means</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationMeans"/>
+        <dcterms:description>Verification means (benches, test equipment, models, etc.) are provided for verification activities. They have to be as representative of upper level system installation as possible regarding the tests objectives on the mean (performances, environment, etc).</dcterms:description>
+        <dcterms:modified>2023-09-30T04:26:45.247Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdEV9JEe6NQOe6jYX5SQ">
+        <rm:actionId>2087411512-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>UID Prefix</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#UIDPrefix"/>
+        <dcterms:created>2023-09-30T04:26:45.362Z</dcterms:created>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:modified>2023-09-30T04:26:45.362Z</dcterms:modified>
+        <dcterms:description>Prefix for requirements identifier.</dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdFl9JEe6NQOe6jYX5SQ">
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:modified>2023-09-30T04:26:45.403Z</dcterms:modified>
+        <dcterms:created>2023-09-30T04:26:45.403Z</dcterms:created>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:description>Additional content resulting from design or implementation decisions during the development process which are not directly traceable to higher-level requirements from stakeholder accountable for system safety.
+
+Requirements with derived content may have Upper level system and/or safety impacts. Additional content resulting from design or implementation decisions during the development process which are not directly traceable to higher-level requirements from stakeholder accountable for system safety.</dcterms:description>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>426954066-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DerivedContent"/>
+        <dcterms:title>Derived Content</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6HI4F9JEe6NQOe6jYX5SQ">
+        <dcterms:description></dcterms:description>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DerivedContentImpactStatus"/>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6HI4F9JEe6NQOe6jYX5SQ#_j6IXAF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Impact suspected</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DerivedContentImpactStatus1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6HI4F9JEe6NQOe6jYX5SQ#_j6IXAV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>No impact to be confirmed</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DerivedContentImpactStatus2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6HI4F9JEe6NQOe6jYX5SQ#_j6IXAl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>No Impact or Impact accepted</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DerivedContentImpactStatus3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6HI4F9JEe6NQOe6jYX5SQ#_j6IXA19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Impact Not accepted</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-DerivedContentImpactStatus4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:created>2023-09-30T04:26:44.692Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:44.692Z</dcterms:modified>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:title>T-Derived Content Impact Status</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdFF9JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:created>2023-09-30T04:26:45.386Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:multiValued>
+        <rm:actionId>351852993-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#ValidationMethods"/>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6I-EF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:title>Validation Methods</dcterms:title>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>Requirement validation methods</dcterms:description>
+        <dcterms:modified>2023-09-30T04:26:45.386Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdI19JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:created>2023-09-30T04:26:45.551Z</dcterms:created>
+        <rm:actionId>434052086-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Allocation"/>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description>System or physical equipment to which the requirement is allocated</dcterms:description>
+        <dcterms:title>Allocation</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.551Z</dcterms:modified>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6KzQ19JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:modified>2023-09-30T04:26:44.802Z</dcterms:modified>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KzQ19JEe6NQOe6jYX5SQ#_j6LaUF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Low</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Maturity1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KzQ19JEe6NQOe6jYX5SQ#_j6LaUV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Medium</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Maturity2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KzQ19JEe6NQOe6jYX5SQ#_j6LaUl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>High</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Maturity3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:description></dcterms:description>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Maturity"/>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:title>T-Maturity</dcterms:title>
+        <dcterms:created>2023-09-30T04:26:44.802Z</dcterms:created>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdGl9JEe6NQOe6jYX5SQ">
+        <dcterms:description>Explanatory text to describe rationale of the requirement.
+
+- Refinement process leading to the current requirement from the upper requirement in particular provides the context of the requirement.
+- Justification of the design choices (extended / derived requirements)
+- Description or Justification of calculations leading to the current requirement
+
+Rationale can be documented/completed through a reference to existing artefacts (design artefacts, assumption statements, lessons learnt, validation reports, etc.)
+Rationale are mandatory in case the requirement is not traceable (type = Derived /Extended) or if its traceability is complex (trace to more than one upper level requirements).
+Rationale is not required for “Direct Flow Down” requirements.</dcterms:description>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:modified>2023-09-30T04:26:45.459Z</dcterms:modified>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:actionId>520709259-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Rationale"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:created>2023-09-30T04:26:45.459Z</dcterms:created>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>Rationale</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdHV9JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#TraceabilityType"/>
+        <dcterms:created>2023-09-30T04:26:45.501Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:description>Upward traceability kind :
+Direct Flow Down:  When requirement is transferred from the upper level without any modification.
+Refined : Requirement that results from refinement of a need expressed at upper-level due to 
+- Modification: requirement transferred with slight changes often due to the context of the specification or design layer.
+- Apportionment: requirement decomposition due to distribution of functional or performance contribution to architecture elements (functions, components).
+- Calculation : requirement is the result calculation of upper requirements (upper constraints fusion, units adaptation, …)
+Derived: New behaviour introduced resulting from design or implementation decisions and not traceable to upper level. Derived requirements shall be substantiated and submitted to System/Safety analysis to confirm the new behaviour has no safety impact.
+Extended: when at least a part of the requirement is considered as introducing new behaviour and cannot be traced to an upper-level requirement. Extended requirements shall be submitted to System/Safety analysis to confirm the new behaviour has no safety impact.</dcterms:description>
+        <rm:actionId>1665587611-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:modified>2023-09-30T04:26:45.501Z</dcterms:modified>
+        <dcterms:title>Traceability Type</dcterms:title>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6OdoF9JEe6NQOe6jYX5SQ"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6PEtF9JEe6NQOe6jYX5SQ">
+        <dcterms:created>2023-09-30T04:26:44.891Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:modified>2023-09-30T04:26:44.891Z</dcterms:modified>
+        <dcterms:title>T-Verifiability</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Verifiability"/>
+        <dcterms:description></dcterms:description>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PEtF9JEe6NQOe6jYX5SQ#_j6PEtV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >0</rdf:value>
+                        <dcterms:title>Verifiability OK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Verifiability1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6PEtF9JEe6NQOe6jYX5SQ#_j6PEtl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Verifiability NOK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Verifiability2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2Bl9JEe6NQOe6jYX5SQ">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:45.240Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:title>Data Classification</dcterms:title>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.240Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DataClassification"/>
+        <rm:actionId>21058907-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description>Establishes the sensitivity of internal information according to its level of confidentiality (or criticality - see GRP-0076)</dcterms:description>
+    </rm:AttributeDefinition>
+    <rm:ObjectType rdf:about="https://elm702/rm/types/OT_j9ksmV9JEe6NQOe6jYX5SQ">
+        <rm:hasWorkflowAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdEl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdKF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2Dl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2A19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdGl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdGV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2EV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdK19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdE19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ"/>
+        <rm:attributeOrdering>https://elm702/rm/types/AD_j8bdI19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdK19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2EV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdLF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdEl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2DV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdGF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2BV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdJ19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdH19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdE19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdJF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdF19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdGl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2D19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdG19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdGV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdHF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2C19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdKF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2Dl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2B19JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2CF9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2CV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdJl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdKV9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8bdKl9JEe6NQOe6jYX5SQ,https://elm702/rm/types/AD_j8a2A19JEe6NQOe6jYX5SQ</rm:attributeOrdering>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdKV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2BV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/modified"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdF19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2BF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdG19JEe6NQOe6jYX5SQ"/>
+        <dcterms:title>Requirement</dcterms:title>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/created"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2CV9JEe6NQOe6jYX5SQ"/>
+        <rm:actionId>1760919372-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdKl9JEe6NQOe6jYX5SQ"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/description"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2D19JEe6NQOe6jYX5SQ"/>
+        <rm:defaultFormat rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdLF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:description></dcterms:description>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdH19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdI19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFV9JEe6NQOe6jYX5SQ"/>
+        <rm:inCreationMenu>true</rm:inCreationMenu>
+        <rm:objectTypeRole rdf:resource="http://www.ibm.com/xmlns/rdm/types/ObjectTypeRoles#PreferredArtifactType"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJ19JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2CF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2C19JEe6NQOe6jYX5SQ"/>
+        <rm:iconReference rdf:resource="http://www.ibm.com/rdm/images/requirementred"/>
+        <dcterms:created>2023-09-30T04:26:45.789Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:45.789Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifacttypes#Requirement"/>
+        <rm:hasAttribute rdf:resource="http://purl.org/dc/terms/title"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdHV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2B19JEe6NQOe6jYX5SQ"/>
+        <rm:hasSystemAttribute rdf:resource="http://purl.org/dc/terms/creator"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8a2DV9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdGF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdJF9JEe6NQOe6jYX5SQ"/>
+        <rm:hasAttribute rdf:resource="https://elm702/rm/types/AD_j8bdFl9JEe6NQOe6jYX5SQ"/>
+    </rm:ObjectType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdJ19JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:actionId>1283524836-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:created>2023-09-30T04:26:45.580Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#KeyDesignDriverImpact"/>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:description>KDD impact analysis on the upstream and downstream components.</dcterms:description>
+        <dcterms:title>Key Design Driver Impact</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.580Z</dcterms:modified>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdLF9JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>To record Engineering Judgement on the requirement maturity.
+Low: recognized as a draft requirement still requiring a high level of convergence or recognised as being candidate for change.
+Medium: still some limited areas in negotiation or to be converged.
+High : recognized as a stable requirement in its actual definition</dcterms:description>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:title>Engineering Judgment Maturity</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#EngineeringJudgmentMaturity"/>
+        <dcterms:modified>2023-09-30T04:26:45.615Z</dcterms:modified>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:actionId>811578928-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KzQ19JEe6NQOe6jYX5SQ"/>
+        <dcterms:created>2023-09-30T04:26:45.615Z</dcterms:created>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow">
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow/attrtype"/>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow#Specification_Workflow.state.s0">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Specification_Workflow.state.s0</rdf:value>
+                        <dcterms:title>In modification</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow#Specification_Workflow.state.s0"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow#Specification_Workflow.state.s1">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Specification_Workflow.state.s1</rdf:value>
+                        <dcterms:title>In review</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow#Specification_Workflow.state.s1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow#Specification_Workflow.state.s2">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Specification_Workflow.state.s2</rdf:value>
+                        <dcterms:title>Applicable</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow#Specification_Workflow.state.s2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Specification_Workflow#Specification_Workflow.state.s3">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Specification_Workflow.state.s3</rdf:value>
+                        <dcterms:title>Applicable frozen</dcterms:title>
+                        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Specification_Workflow#Specification_Workflow.state.s3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:description></dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:workflow>
+        <dcterms:title>Specification Workflow</dcterms:title>
+        <dcterms:modified>2023-07-28T07:21:38.773Z</dcterms:modified>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2D19JEe6NQOe6jYX5SQ">
+        <rm:actionId>1142157252-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:modified>2023-09-30T04:26:45.328Z</dcterms:modified>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#RequirementClass"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:45.328Z</dcterms:created>
+        <dcterms:title>Requirement Class</dcterms:title>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6IXBF9JEe6NQOe6jYX5SQ"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:description>To identify the requirement category. Requirement class is used, in particular, to preliminary assess the verification methods and verification means that could be used.</dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdGF9JEe6NQOe6jYX5SQ">
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:description>To identify requirements having a strong influence on cost, schedule, risk, functionality or performance.</dcterms:description>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Key"/>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:title>Key</dcterms:title>
+        <rm:actionId>2073142562-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:modified>2023-09-30T04:26:45.443Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:45.443Z</dcterms:created>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ#_j6KzQV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Yes</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-BooleanYN1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ#_j6KzQl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>No</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-BooleanYN2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:modified>2023-09-30T04:26:44.788Z</dcterms:modified>
+        <dcterms:title>T-BooleanYN</dcterms:title>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-BooleanYN"/>
+        <dcterms:created>2023-09-30T04:26:44.788Z</dcterms:created>
+        <dcterms:description></dcterms:description>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdIV9JEe6NQOe6jYX5SQ">
+        <rm:actionId>2083320807-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:created>2023-09-30T04:26:45.537Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Owner"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:title>Owner</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>2023-09-30T04:26:45.537Z</dcterms:modified>
+        <dcterms:description>Department/Team owning the artifact</dcterms:description>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdHl9JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:45.516Z</dcterms:modified>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:created>2023-09-30T04:26:45.516Z</dcterms:created>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:title>Comment</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description>N/A</dcterms:description>
+        <rm:actionId>699274332-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#Comment"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6OdoF9JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-TraceabilityType"/>
+        <dcterms:created>2023-09-30T04:26:44.856Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6OdoF9JEe6NQOe6jYX5SQ#_j6OdoV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Direct Flow Down</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Traceability1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6OdoF9JEe6NQOe6jYX5SQ#_j6Odol9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Refined</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Traceability2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6OdoF9JEe6NQOe6jYX5SQ#_j6Odo19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Derived</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Traceability3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6OdoF9JEe6NQOe6jYX5SQ#_j6OdpF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Extended</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Traceability4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:modified>2023-09-30T04:26:44.856Z</dcterms:modified>
+        <dcterms:title>T-Traceability</dcterms:title>
+        <dcterms:description></dcterms:description>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rm:AttributeType>
+    <rm:LinkType rdf:about="https://elm702/rm/types/LT_j6vbBV9JEe6NQOe6jYX5SQ">
+        <rm:actionId>1792333677-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:objectToSubjectLabel>Justifies</rm:objectToSubjectLabel>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:subjectToObjectLabel>Justified by</rm:subjectToObjectLabel>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:description>REQ&lt;-&gt;ANA</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:46.024Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:46.024Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/linktypes#justification"/>
+        <dcterms:title>Justification</dcterms:title>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="https://elm702/rm/types/LT_j6vbAF9JEe6NQOe6jYX5SQ">
+        <rm:objectToSubjectLabel>Allocated by</rm:objectToSubjectLabel>
+        <dcterms:description>Link between statements and requirements</dcterms:description>
+        <dcterms:created>2023-09-30T04:26:45.973Z</dcterms:created>
+        <rm:subjectToObjectLabel>Allocates</rm:subjectToObjectLabel>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/linktypes#Allocation"/>
+        <dcterms:modified>2023-09-30T04:26:45.973Z</dcterms:modified>
+        <dcterms:title>Allocation</dcterms:title>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>2147028890-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2CV9JEe6NQOe6jYX5SQ">
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationResult"/>
+        <dcterms:created>2023-09-30T04:26:45.264Z</dcterms:created>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:actionId>1481280640-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>Explanatory wording or reference to the verification substantiation records or reports providing evidence of the satisfaction of the requirement by the implemented system. 
+Verification evidence or artefact shall be provided according to the verification strategy. Meaning that the evidence of each activity conducted in front of each verification method shall be provided as well as the associated result.</dcterms:description>
+        <dcterms:title>Verification Result</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.264Z</dcterms:modified>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdEl9JEe6NQOe6jYX5SQ">
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ"/>
+        <dcterms:title>Flight Test Clearance</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description>To identify whether the requirement needs to be verified for Flight Test clearance.</dcterms:description>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#FlightTestClearance"/>
+        <dcterms:created>2023-09-30T04:26:45.370Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:45.370Z</dcterms:modified>
+        <rm:actionId>108046268-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdJl9JEe6NQOe6jYX5SQ">
+        <rm:actionId>307838622-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#VerificationStatus"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>2023-09-30T04:26:45.573Z</dcterms:modified>
+        <dcterms:created>2023-09-30T04:26:45.573Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:description>Resulting status of the verification activities. It is the summary status of all the verification activities associated to each method and evidence. This is the result of the Engineering review of the verification artefacts as required by the the verification plan.
+Initial intention before the verification activities : PASSED EXPECTED / PASSED EXPECTED WITH RISK / FAILED EXPECTED
+And then updated after verification activities : PASSED / FAILED</dcterms:description>
+        <dcterms:title>Verification Status</dcterms:title>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ"/>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ">
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dcterms:modified>2023-09-30T04:26:44.942Z</dcterms:modified>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>T-Verification Status</dcterms:title>
+        <dcterms:created>2023-09-30T04:26:44.942Z</dcterms:created>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationStatus"/>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ#_j6Q54V9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Passed expected</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationStatus1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ#_j6Q54l9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Passed expected with risk</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationStatus2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ#_j6Q5419JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Failed expected</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationStatus3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ#_j6Q55F9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Passed</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationStatus4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6Q54F9JEe6NQOe6jYX5SQ#_j6Q55V9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>Failed</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-VerificationStatus5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2DF9JEe6NQOe6jYX5SQ">
+        <dcterms:modified>2023-09-30T04:26:45.287Z</dcterms:modified>
+        <dcterms:description>Part Number of the specified system.</dcterms:description>
+        <dcterms:title>PN Reference</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#PNReference"/>
+        <rm:actionId>442447712-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <dcterms:created>2023-09-30T04:26:45.287Z</dcterms:created>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6NPgF9JEe6NQOe6jYX5SQ">
+        <dcterms:created>2023-09-30T04:26:44.829Z</dcterms:created>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:title>T-Flow Down Status</dcterms:title>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6NPgF9JEe6NQOe6jYX5SQ#_j6NPgV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Flow Down OK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-FlowDownStatus1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6NPgF9JEe6NQOe6jYX5SQ#_j6NPgl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Flow Down NOK</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-FlowDownStatus2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:modified>2023-09-30T04:26:44.829Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-FlowDownStatus"/>
+        <dcterms:description></dcterms:description>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ">
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Batch"/>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ#_j6JlIV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</rdf:value>
+                        <dcterms:title>Batch 1</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Batch1"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ#_j6JlIl9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >2</rdf:value>
+                        <dcterms:title>Batch 2</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Batch2"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ#_j6JlI19JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >3</rdf:value>
+                        <dcterms:title>Batch 3</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Batch3"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ#_j6JlJF9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >4</rdf:value>
+                        <dcterms:title>Batch 4</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Batch4"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="https://elm702/rm/types/AT_j6JlIF9JEe6NQOe6jYX5SQ#_j6JlJV9JEe6NQOe6jYX5SQ">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >5</rdf:value>
+                        <dcterms:title>Batch 5</dcterms:title>
+                        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactdatatypes#T-Batch5"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:created>2023-09-30T04:26:44.762Z</dcterms:created>
+        <dcterms:modified>2023-09-30T04:26:44.762Z</dcterms:modified>
+        <dcterms:description></dcterms:description>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:title>T-Batch</dcterms:title>
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdG19JEe6NQOe6jYX5SQ">
+        <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+        <dcterms:modified>2023-09-30T04:26:45.476Z</dcterms:modified>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:description>Safety-related requirement: Requirement that meets at least one of the following conditions:
+- It is flowed down from a safety need expressed in the PSSA (safety objectives (quantitative or qualitative), development assurance levels, independence requirements and protection mechanisms such as critical software monitors)
+- At least one of its upstream requirements/needs is identified as safety-related.</dcterms:description>
+        <dcterms:title>Safety Related</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+        <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#SafetyRelated"/>
+        <dcterms:created>2023-09-30T04:26:45.476Z</dcterms:created>
+        <rm:range rdf:resource="https://elm702/rm/types/AT_j6KzQF9JEe6NQOe6jYX5SQ"/>
+        <rm:actionId>1540023222-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow">
+        <dc:creator></dc:creator>
+        <rm:matchingProperty rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:workflow>
+        <dcterms:description></dcterms:description>
+        <dcterms:modified></dcterms:modified>
+        <dc:contributor></dc:contributor>
+        <rm:range rdf:resource="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Assumptions_Workflow"/>
+        <dcterms:title>State (Assumptions Workflow)</dcterms:title>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:workflowTitle>Assumptions Workflow</rm:workflowTitle>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Assumptions_Workflow"/>
+        <rm:actionId>20439338</rm:actionId>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:created></dcterms:created>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="https://elm702/rm/types/workflow/attrdef/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow">
+        <rm:matchingProperty rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow"/>
+        <rm:workflowTitle>Requirements Workflow</rm:workflowTitle>
+        <dc:creator></dc:creator>
+        <rm:actionId>631557490</rm:actionId>
+        <rm:range rdf:resource="https://elm702/rm/types/workflow/attrtype/_dqbR8FwbEe2HWui_AGn9sQ/Requirements_Workflow"/>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/workflow/Requirements_Workflow"/>
+        <dcterms:created></dcterms:created>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:description></dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:title>State (Requirements Workflow)</dcterms:title>
+        <dc:contributor></dc:contributor>
+        <dcterms:modified></dcterms:modified>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:workflow>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#date">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>Date</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats">
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:enumEntries>
+            <rdf:Seq>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Collection">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Collection</rdf:value>
+                        <dcterms:title>Collection</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Collection"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Document">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Document</rdf:value>
+                        <dcterms:title>Document</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Document"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Glossary">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Glossary</rdf:value>
+                        <dcterms:title>Glossary</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Glossary"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Term">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Term</rdf:value>
+                        <dcterms:title>Term</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Term"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Text">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Text</rdf:value>
+                        <dcterms:title>Text</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Text"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Part">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Part</rdf:value>
+                        <dcterms:title>User Interface Part</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Part"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Sketch">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Sketch</rdf:value>
+                        <dcterms:title>User Interface Sketch</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Sketch"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#ScreenFlow">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >ScreenFlow</rdf:value>
+                        <dcterms:title>Screen Flow</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#ScreenFlow"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Storyboard">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Storyboard</rdf:value>
+                        <dcterms:title>Storyboard</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Storyboard"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#BusinessProcessDiagram">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >BusinessProcessDiagram</rdf:value>
+                        <dcterms:title>Business Process Diagram</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#BusinessProcessDiagram"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#SimpleFlowDiagram">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >SimpleFlowDiagram</rdf:value>
+                        <dcterms:title>Simple Flow Diagram</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#SimpleFlowDiagram"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#UseCaseDiagram">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >UseCaseDiagram</rdf:value>
+                        <dcterms:title>Use-Case Diagram</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#UseCaseDiagram"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#WrapperResource">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >WrapperResource</rdf:value>
+                        <dcterms:title>File</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#WrapperResource"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Module">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Module</rdf:value>
+                        <dcterms:title>Module</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Module"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Composite">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Composite</rdf:value>
+                        <dcterms:title>Composite</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Composite"/>
+                    </rm:enumEntry>
+                </rdf:li>
+                <rdf:li>
+                    <rm:enumEntry rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats#Diagram">
+                        <rdf:value rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Diagram</rdf:value>
+                        <dcterms:title>Diagram</dcterms:title>
+                        <owl:sameAs rdf:resource="http://jazz.net/ns/rm#Diagram"/>
+                    </rm:enumEntry>
+                </rdf:li>
+            </rdf:Seq>
+        </rm:enumEntries>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:description></dcterms:description>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>ArtifactFormats</dcterms:title>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats"/>
+    </rm:AttributeType>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#trackedBy">
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:type>CALM</dcterms:type>
+        <rm:objectToSubjectLabel>Tracks</rm:objectToSubjectLabel>
+        <dcterms:description>Captures the relationship between a Requirements Management artifact and a Change Management item that tracks the implementation of the requirement artifact (e.g., a Task in IBM Engineering Workflow Management).  Links of this type appear as 'Tracks' in Change Management.</dcterms:description>
+        <rm:subjectToObjectLabel>Tracked By</rm:subjectToObjectLabel>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:title>Tracked By</dcterms:title>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#trackedBy"/>
+        <dc:contributor>ADMIN</dc:contributor>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://www.ibm.com/xmlns/rdm/types/Decomposition">
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:description>Captures part-whole relationships between Requirements Management artifacts.  These types of links are typically used to represent artifact hierarchies.</dcterms:description>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:title>Decomposition</dcterms:title>
+        <rm:subjectToObjectLabel>Child Of</rm:subjectToObjectLabel>
+        <rm:objectToSubjectLabel>Parent Of</rm:objectToSubjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:actionId>Decomposition-</rm:actionId>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/Decomposition"/>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#elaborates">
+        <rm:subjectToObjectLabel>Elaborates</rm:subjectToObjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#elaborates"/>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:title>Elaborates</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:objectToSubjectLabel>Elaborated By</rm:objectToSubjectLabel>
+        <dcterms:description>Expresses an elaboration relationship between entities, where the subject entity elaborates the object entity. For example, a requirement elaborates a model element.</dcterms:description>
+        <dcterms:type>CALM</dcterms:type>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/description">
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>Description</dcterms:title>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rm:actionId>description-</rm:actionId>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/description"/>
+        <dcterms:description></dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:creator>ADMIN</dc:creator>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#int">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>Integer</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#float">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>Float</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </rm:AttributeType>
+    <rm:LinkType rdf:about="http://www.ibm.com/xmlns/rdm/types/Extraction">
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/Extraction"/>
+        <dcterms:description>Captures when the content of a Requirements Management artifact has been created from content of another Requirements Management artifact.  This type of link is created when performing extraction-based operations, for example, the 'Save As New' operation for a Text artifact.</dcterms:description>
+        <rm:actionId>Extraction-</rm:actionId>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:objectToSubjectLabel>Extracted From</rm:objectToSubjectLabel>
+        <rm:subjectToObjectLabel>Extracted</rm:subjectToObjectLabel>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:title>Extraction</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+    </rm:LinkType>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#dateTime">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>DateTime</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="http://www.ibm.com/xmlns/rdm/types/UserAttributeType">
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/UserAttributeType"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>User</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.ibm.com/xmlns/rdm/types/UserAttributeType"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/modified">
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:description></dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/modified"/>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dcterms:title>Modified On</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://www.ibm.com/xmlns/rdm/types/SynonymLink">
+        <rm:objectToSubjectLabel>Synonym</rm:objectToSubjectLabel>
+        <dcterms:description>Relates two Requirements Management Glossary Terms that have the same meaning.</dcterms:description>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:actionId>SynonymLink-</rm:actionId>
+        <rm:subjectToObjectLabel>Synonym</rm:subjectToObjectLabel>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/SynonymLink"/>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:title>Synonym</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://jazz.net/ns/dm/linktypes#satisfy">
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:type>CALM</dcterms:type>
+        <owl:sameAs rdf:resource="http://jazz.net/ns/dm/linktypes#satisfy"/>
+        <rm:subjectToObjectLabel>Satisfied By Architecture Element</rm:subjectToObjectLabel>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:description>The model element satisfies the requirement (e.g. The use case satisfies a functional requirement). </dcterms:description>
+        <dcterms:title>Satisfy Architecture Element</dcterms:title>
+        <rm:objectToSubjectLabel>Satisfies Architecture Element</rm:objectToSubjectLabel>
+        <dc:creator>ADMIN</dc:creator>
+        <dc:contributor>ADMIN</dc:contributor>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://jazz.net/ns/dm/linktypes#derives">
+        <dcterms:description>Captures the relationship between a Requirements Management artifact and an Architecture Management item that represents a model of the requirement artifact (e.g., a UML Use Case in IBM Engineering Systems Design Rhapsody - Model Manager).  Links of this type appear as 'Derives From' in Architecture Management.</dcterms:description>
+        <dcterms:type>CALM</dcterms:type>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://jazz.net/ns/dm/linktypes#derives"/>
+        <rm:objectToSubjectLabel>Derives From Architecture Element</rm:objectToSubjectLabel>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:subjectToObjectLabel>Derives Architecture Element</rm:subjectToObjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>Derives Architecture Element</dcterms:title>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat">
+        <dcterms:title>Artifact Format</dcterms:title>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormat"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:range rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactFormats"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</rm:mandatory>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:actionId>ArtifactFormat-</rm:actionId>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://www.ibm.com/xmlns/rdm/types/ArtifactTermReferenceLink">
+        <dcterms:description>Captures glossary-based relationships between part of a Requirements Management artifact (e.g., a word or phrase) and a Glossary Term. This type of link is created when performing Term-based operations for Text artifacts, for example, the 'Create New Term' operation.</dcterms:description>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/ArtifactTermReferenceLink"/>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:objectToSubjectLabel>Term Referenced From</rm:objectToSubjectLabel>
+        <dcterms:title>Artifact Term Reference</dcterms:title>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:actionId>ArtifactTermReferenceLink-</rm:actionId>
+        <rm:subjectToObjectLabel>References Term</rm:subjectToObjectLabel>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://www.ibm.com/xmlns/rdm/types/Link">
+        <dcterms:description>Tracks a general relationship between Requirements Management artifacts.</dcterms:description>
+        <rm:subjectToObjectLabel>Link To</rm:subjectToObjectLabel>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:creator>ADMIN</dc:creator>
+        <dc:contributor>ADMIN</dc:contributor>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/Link"/>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:objectToSubjectLabel>Link From</rm:objectToSubjectLabel>
+        <dcterms:title>Link</dcterms:title>
+        <rm:actionId>Link-</rm:actionId>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="http://www.ibm.com/xmlns/rdm/types/PrimaryText">
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:actionId>PrimaryText-</rm:actionId>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/PrimaryText"/>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:title>Primary Text</dcterms:title>
+        <dcterms:description></dcterms:description>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#implementedBy">
+        <dc:contributor>ADMIN</dc:contributor>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:objectToSubjectLabel>Implements</rm:objectToSubjectLabel>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:subjectToObjectLabel>Implemented By</rm:subjectToObjectLabel>
+        <dcterms:type>CALM</dcterms:type>
+        <dcterms:title>Implemented By</dcterms:title>
+        <dcterms:description>Captures the relationship between a Requirements Management artifact and a Change Management item that describes the implementation of the requirement artifact (e.g., a Story in IBM Engineering Workflow Management). Links of this type appear as 'Implements' in Change Management.</dcterms:description>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#implementedBy"/>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/identifier">
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>Identifier</dcterms:title>
+        <dcterms:description></dcterms:description>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#validatedBy">
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:title>Validated By</dcterms:title>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#validatedBy"/>
+        <dcterms:description>Captures the relationship between a Requirements Management artifact and a Quality Management item that validates the implementation of the requirement artifact (e.g. a Test Case in IBM Engineering Test Management).  Links of this type appear as 'Validates' in Quality Management.</dcterms:description>
+        <dcterms:type>CALM</dcterms:type>
+        <rm:objectToSubjectLabel>Validates</rm:objectToSubjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:subjectToObjectLabel>Validated By</rm:subjectToObjectLabel>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://jazz.net/ns/dm/linktypes#refine">
+        <dcterms:description>The target is a refinement of the source. (e.g. a use case scenario might be a refinement of a textual requirement that describes the interaction).</dcterms:description>
+        <dcterms:type>CALM</dcterms:type>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://jazz.net/ns/dm/linktypes#refine"/>
+        <rm:objectToSubjectLabel>Refines Architecture Element</rm:objectToSubjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>Refines Architecture Element</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:subjectToObjectLabel>Refined By Architecture Element</rm:subjectToObjectLabel>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#specifiedBy">
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:subjectToObjectLabel>Specified By</rm:subjectToObjectLabel>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#specifiedBy"/>
+        <dcterms:description>Expresses a specification relationship between entities, where the subject entity is specified by the object entity. For example, a requirement is specified by a model element.</dcterms:description>
+        <dcterms:title>Specified By</dcterms:title>
+        <rm:objectToSubjectLabel>Specifies</rm:objectToSubjectLabel>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:type>CALM</dcterms:type>
+        <dc:creator>ADMIN</dc:creator>
+    </rm:LinkType>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#boolean">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>Boolean</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </rm:AttributeType>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#time">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>Time</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#time"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="http://www.ibm.com/xmlns/rdm/types/AlternateSpelling">
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/AlternateSpelling"/>
+        <dcterms:description></dcterms:description>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <rm:actionId>AlternateSpelling-</rm:actionId>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>Alternative Spelling</dcterms:title>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://jazz.net/ns/dm/linktypes#trace">
+        <rm:objectToSubjectLabel>Trace Architecture Element</rm:objectToSubjectLabel>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:description>The model element has a trace to the requirement (e.g. an attribute or its value are traced to a requirement).</dcterms:description>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://jazz.net/ns/dm/linktypes#trace"/>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:subjectToObjectLabel>Traced By Architecture Element</rm:subjectToObjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:type>CALM</dcterms:type>
+        <dcterms:title>Trace Architecture Element</dcterms:title>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#affectedBy">
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:creator>ADMIN</dc:creator>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#affectedBy"/>
+        <rm:subjectToObjectLabel>Affected By</rm:subjectToObjectLabel>
+        <dcterms:type>CALM</dcterms:type>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:title>Affected By</dcterms:title>
+        <rm:objectToSubjectLabel>Affects</rm:objectToSubjectLabel>
+        <dcterms:description>Captures the relationship between a Requirements Management artifact and a Change Management item that has an effect on the implementation of the requirement artifact (e.g., a Defect in IBM Engineering Workflow Management).  Links of this type appear as 'Affects' in Change Management.</dcterms:description>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+    </rm:LinkType>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#elaboratedBy">
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#elaboratedBy"/>
+        <rm:objectToSubjectLabel>Elaborates</rm:objectToSubjectLabel>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:description>Expresses an elaboration relationship between entities, where the subject entity is elaborated by the object entity. For example, a requirement is elaborated by a model element.</dcterms:description>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:type>CALM</dcterms:type>
+        <dcterms:title>Elaborated By</dcterms:title>
+        <rm:subjectToObjectLabel>Elaborated By</rm:subjectToObjectLabel>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/creator">
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:range rdf:resource="http://www.ibm.com/xmlns/rdm/types/UserAttributeType"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/creator"/>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dcterms:title>Creator</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:description></dcterms:description>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://www.ibm.com/xmlns/rdm/types/Embedding">
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:objectToSubjectLabel>Embedded In</rm:objectToSubjectLabel>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:description>Tracks a containment relationship between Requirements Management artifacts.  These types of relationships occur when performing operations such as 'Insert Artifact' and 'Insert Image' for a Text artifact.</dcterms:description>
+        <rm:actionId>Embedding-</rm:actionId>
+        <dcterms:title>Embeds</dcterms:title>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dc:creator>ADMIN</dc:creator>
+        <owl:sameAs rdf:resource="http://www.ibm.com/xmlns/rdm/types/Embedding"/>
+        <rm:subjectToObjectLabel>Embeds</rm:subjectToObjectLabel>
+    </rm:LinkType>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>String</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rm:AttributeType>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/created">
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:title>Created On</dcterms:title>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/created"/>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:description></dcterms:description>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </rm:AttributeDefinition>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/contributor">
+        <rm:range rdf:resource="http://www.ibm.com/xmlns/rdm/types/UserAttributeType"/>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:description></dcterms:description>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/contributor"/>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:title>Contributor</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+    </rm:AttributeDefinition>
+    <rm:LinkType rdf:about="http://purl.org/dc/terms/references">
+        <dcterms:title>References</dcterms:title>
+        <rm:objectToSubjectLabel>Referenced By</rm:objectToSubjectLabel>
+        <dc:creator>ADMIN</dc:creator>
+        <dcterms:description>Captures the relationship between a Requirements Management artifact and another Requirements Management artifact in a different RM instance or external project area.</dcterms:description>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:contributor>ADMIN</dc:contributor>
+        <rm:subjectToObjectLabel>References</rm:subjectToObjectLabel>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/references"/>
+        <dcterms:type>CALM</dcterms:type>
+    </rm:LinkType>
+    <rm:AttributeDefinition rdf:about="http://purl.org/dc/terms/title">
+        <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:multiValued>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <rm:actionId>title-</rm:actionId>
+        <dcterms:description></dcterms:description>
+        <owl:sameAs rdf:resource="http://purl.org/dc/terms/title"/>
+        <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:workflow>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dcterms:title>Title</dcterms:title>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >false</rm:mandatory>
+        <dc:contributor>ADMIN</dc:contributor>
+    </rm:AttributeDefinition>
+    <rm:AttributeType rdf:about="http://www.w3.org/2001/XMLSchema#duration">
+        <owl:sameAs rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+        <dcterms:description></dcterms:description>
+        <dcterms:title>Duration</dcterms:title>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <rm:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
+    </rm:AttributeType>
+    <rm:LinkType rdf:about="http://open-services.net/ns/rm#specifies">
+        <dcterms:type>CALM</dcterms:type>
+        <dcterms:created>1970-01-01T00:00:00.000Z</dcterms:created>
+        <dc:creator>ADMIN</dc:creator>
+        <dc:contributor>ADMIN</dc:contributor>
+        <dcterms:modified>1970-01-01T00:00:00.000Z</dcterms:modified>
+        <dcterms:description>Expresses a specification relationship between entities, where the subject entity further clarifies or specifies the object entity. For example, a requirement specifies a model element.</dcterms:description>
+        <rm:objectToSubjectLabel>Specified By</rm:objectToSubjectLabel>
+        <dcterms:title>Specifies</dcterms:title>
+        <owl:sameAs rdf:resource="http://open-services.net/ns/rm#specifies"/>
+        <rm:subjectToObjectLabel>Specifies</rm:subjectToObjectLabel>
+    </rm:LinkType>
+</rdf:RDF>

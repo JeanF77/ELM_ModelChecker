@@ -1,0 +1,29 @@
+<rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8a2Bl9JEe6NQOe6jYX5SQ">
+    <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rm:mandatory>
+    <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    <dcterms:created>2023-09-30T04:26:45.240Z</dcterms:created>
+    <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    <dcterms:title>Data Classification</dcterms:title>
+    <rm:range rdf:resource="https://elm702/rm/types/AT_j6KMMF9JEe6NQOe6jYX5SQ"/>
+    <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rm:workflow>
+    <dcterms:modified>2023-09-30T04:26:45.240Z</dcterms:modified>
+    <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#DataClassification"/>
+    <rm:actionId>21058907-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rm:multiValued>
+    <dcterms:description>Establishes the sensitivity of internal information according to its level of confidentiality (or criticality - see GRP-0076)</dcterms:description>
+</rm:AttributeDefinition>
+
+<rm:AttributeDefinition rdf:about="https://elm702/rm/types/AD_j8bdJ19JEe6NQOe6jYX5SQ">
+    <dc:contributor>https://elm702/jts/users/s018642a</dc:contributor>
+    <rm:actionId>1283524836-_j37XkF9JEe6NQOe6jYX5SQ</rm:actionId>
+    <dcterms:created>2023-09-30T04:26:45.580Z</dcterms:created>
+    <owl:sameAs rdf:resource="http://safran-group.com/ns/rm/artifactattributes#KeyDesignDriverImpact"/>
+    <rm:multiValued rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rm:multiValued>
+    <dc:creator>https://elm702/jts/users/s018642a</dc:creator>
+    <rm:workflow rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rm:workflow>
+    <dcterms:description>KDD impact analysis on the upstream and downstream components.</dcterms:description>
+    <dcterms:title>Key Design Driver Impact</dcterms:title>
+    <rm:mandatory rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</rm:mandatory>
+    <dcterms:modified>2023-09-30T04:26:45.580Z</dcterms:modified>
+    <rm:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rm:AttributeDefinition>

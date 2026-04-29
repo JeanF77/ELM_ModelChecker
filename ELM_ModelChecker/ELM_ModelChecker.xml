@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- ***********************************************************************************
+                   (C) Copyright 2019 by Safran Aircraft Engines
+                            All rights reserved
+************************************************************************************ -->
+
+<Module specificationVersion="2.0">
+
+<ModulePrefs title="RM Configuration Crawler" height="1000" scrolling="true">
+	<Require feature="dynamic-height"/>
+</ModulePrefs>
+
+<UserPref name="JAZZ_RMHOSTNAME"  display_name="RM Hostname"  datatype="string" required="true" default_value="https://rm-host-fqdn:port"></UserPref>
+
+<Content type="html">
+<![CDATA[
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma" content="no-cache" />
+
+	<!-- Frameworks -->
+	<script src="js/jquery/jquery-3.7.1.min.js"></script>
+
+	<link rel="stylesheet" href="js/bootstrap/5.3.3/css/bootstrap.min.css">
+	<script src="js/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+	<script src="js/handlebars/handlebars.min-v4.7.8.js"></script>
+
+	<link rel="stylesheet" href="js/datatables/2.0.7/datatables.min.css">
+	<script src="js/datatables/2.0.7/datatables.min.js"></script>
+
+	<script src="js/utilities/download.js"></script>
+	
+	<!-- Internal Tools -->
+	<script src="js/OSLC_NameSpace.js"></script>
+	<script src="js/ELM_guiUtils.js"></script>
+	<script src="js/ELM_controler.js"></script>
+	<script src="js/ELM_datamodel.js"></script>
+	<script src="js/ELM_objects.js"></script>
+	<script src="js/ELM_guiMgt.js"></script>
+	<script src="js/ELM_utils.js"></script>
+	<script src="js/ELM_chkproject.js"></script>
+	<script src="js/ELM_view.js"></script>
+	<script src="js/ELM_main.js"></script>
+
+	<link rel="icon" type="image/png" href="resources/checker_icon.png" />
+
+	<title>ELM Data Model Checker</title>
+
+	<!-- Templates -->
+
+	<script id="templ-datamodel-datatype" type="text/x-handlebars-template">
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Name ({{object_nbitem}})</th>
+				{{#if is_exportable}}
+					<th>URI</th>
+					<th>Description</th>
+				{{/if}}
+				<th>Base Data Type</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{{#each object_list}}
+				<tr>
+					<td>{{dmItem_getname}}</td>
+					{{#if ../is_exportable}}
+						<td>{{dmItem_geturi}}</td>
+						<td>{{dmItem_getdescription}}</td>
+					{{/if}}
+					<td>{{datatype_getbasetype}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		  </table>
+	</script>
+
+	<script id="templ-datamodel-attribute" type="text/x-handlebars-template">
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Name ({{object_nbitem}})</th>
+				{{#if is_exportable}}
+					<th>URI</th>
+					<th>Description</th>
+				{{/if}}
+				<th>Data Type</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{{#each object_list}}
+				<tr>
+					<td>{{dmItem_getname}}</td>
+					{{#if ../is_exportable}}
+						<td>{{dmItem_geturi}}</td>
+						<td>{{dmItem_getdescription}}</td>
+					{{/if}}
+					<td>{{attribute_gettype}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		  </table>
+	</script>
+
+	<script id="templ-datamodel-artifact" type="text/x-handlebars-template">
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Name ({{object_nbitem}})</th>
+				{{#if is_exportable}}
+					<th>URI</th>
+					<th>Description</th>
+				{{/if}}
+				<th>Attributes</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{{#each object_list}}
+				<tr>
+					<td>{{dmItem_getname}}</td>
+					{{#if ../is_exportable}}
+						<td>{{dmItem_geturi}}</td>
+						<td>{{dmItem_getdescription}}</td>
+					{{/if}}
+					<td>{{artifact_getattribute}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		  </table>
+	</script>
+
+	<script id="templ-datamodel-linktype" type="text/x-handlebars-template">
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>Name ({{object_nbitem}})</th>
+				{{#if is_exportable}}
+					<th>URI</th>
+					<th>Description</th>
+				{{/if}}
+				<th>Relationship Labels</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{{#each object_list}}
+				<tr>
+					<td>{{dmItem_getname}}</td>
+					{{#if ../is_exportable}}
+						<td>{{dmItem_geturi}}</td>
+						<td>{{dmItem_getdescription}}</td>
+					{{/if}}
+					<td><img src="./resources/icon_outgoing.png" alt="Outgoing" width="8px"> {{linktype_getoutgoing}} | <img src="./resources/icon_incoming.png" alt="Incoming" width="8px"> {{linktype_getincoming}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		  </table>
+	</script>
+
+	<script id="templ-datamodel-componenttochk" type="text/x-handlebars-template">
+		<table class="table table-striped">
+			<thead>
+			  <tr>
+				<th>#Select</th>
+				<th>Component ({{object_nbitem}})</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{{#each object_list}}
+				<tr>
+					<td>
+						<div class="form-check d-flex justify-content-center">
+							<input class="form-check-input" type="checkbox" value="" id="gui_componentSelect_{{rmItem_getid}}" >
+						</div>
+					</td>
+					<td>{{dmItem_getname}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+		  </table>
+	</script>
+
+	<script id="templ-report-summary" type="text/x-handlebars-template">
+		<div class="card">
+			<div class="card-body">
+				<div class="d-flex justify-content-center">
+					<span><b>Reference Project</b> = {{ref_project}}</span>
+					<span><b>&nbsp;&nbsp;|&nbsp;&nbsp;Reference Component</b> = {{ref_component}}</span>
+					<span><b>&nbsp;&nbsp;|&nbsp;&nbsp;Reference Configuration</b> = {{ref_configuration}}</span>
+				</div>
+				<div class="d-flex justify-content-center">
+					<span><b>Checked Project</b> = {{chk_project}}</span>
+				</div>
+			</div>
+		</div>
+	</script>
+
+	<script id="templ-report-eventlist" type="text/x-handlebars-template">
+		<table class="table table-striped" id="gui_reportTabDetails" style="width: 100%;">
+			<thead>
+			  <tr>
+				<th>Event Type</th>
+				<th>Configuration Name</th>
+				<th>Object Category</th>
+				<th>Object Name</th>
+				<th>Description</th>
+			  </tr>
+			</thead>
+			<tbody>
+				{{#each even_list}}
+				<tr>
+					<td>{{event_getType}}</td>
+					<td>{{event_getConfiguration}}</td>
+					<td>{{event_getTargetAlias}}</td>
+					<td>{{event_getTarget}}</td>
+					<td>{{event_getDescription}}</td>
+				</tr>
+				{{/each}}
+			</tbody>
+			<tfoot>
+				<th>Event Type</th>
+				<th>Configuration Name</th>
+				<th>Object Category</th>
+				<th>Object Name</th>
+				<th>Description</th>
+			</tfoot>
+		  </table>
+	</script>
+
+	<script id="templ-datamodel-export" type="text/x-handlebars-template">
+		<!doctype html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta http-equiv="Cache-Control" content="no-cache" />
+				<meta http-equiv="Pragma" content="no-cache" />
+			</head>
+			<body>
+				<p><span><b>Project Name : </b></span><span>{{project_name}}</span></p>
+				<p><span><b>Component Name : </b></span><span>{{component_name}}</span></p>
+				<p><span><b>Configuration Name : </b></span><span>{{configuration_name}}</span></p>
+				<p></p>
+				<p><b>Data Types</b></p>
+				{{export_datatype}}
+				<p></p>
+				<p><b>Attributes</b></p>
+				{{export_attribute}}
+				<p></p>
+				<p><b>Artifact Types</b></p>
+				{{export_artifacttype}}
+				<p></p>
+				<p><b>Link Types</b></p>
+				{{export_linktype}}
+			</body>
+		</html>
+	</script>
+
+	<script id="templ-compare-export" type="text/x-handlebars-template">
+		<!doctype html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta http-equiv="Cache-Control" content="no-cache" />
+				<meta http-equiv="Pragma" content="no-cache" />
+			</head>
+			<body>
+				<p><span><b>Reference Project Name : </b></span><span>{{projectRef_name}}</span></p>
+				<p><span><b>Reference Component Name : </b></span><span>{{componentRef_name}}</span></p>
+				<p><span><b>Reference Configuration Name : </b></span><span>{{configurationRef_name}}</span></p>
+				<p></p>
+				<p><span><b>Checked Project Name : </b></span><span>{{projectChk_name}}</span></p>
+				<p><span><b>Checked Components List : </b></span><span>{{componentChk_name}}</span></p>
+				<p></p>
+				<p>{{compare_Report}}</p>
+			</body>
+		</html>
+	</script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row"> <!-- Button start check operation -->
+			<div id="gui_msg_error-02" style="display: none;">
+				<p></p>
+				<!-- Check Error Messages -->
+				<div class="alert alert-danger alert-dismissible" role="alert">
+					<strong>Global error :</strong> check the settings and browser console !
+				</div>									  
+			</div>
+		</div>
+		<p></p>
+		<div class="row row-cols-1 row-cols-md-2">
+			<!-- Reference Data Model -->
+			<div class="col mb-4">
+				<div class="card">
+					<div class="card-header" style="font-size: 20px;">
+						<table cellpadding="3" style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="vertical-align: middle; width: 15%;">
+										<img src="./resources/icon_foundation.png" alt="Reference" width="25px">
+									</td>
+									<td style="vertical-align: middle;">
+										<b>Reference Component</b>
+									</td>
+									<td style="vertical-align: middle; text-align: right">
+										<img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Choose Reference Data Model">
+										<img src="./resources/icon_counter_1.png" alt="Count 1" width="25px">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="card-body" style="font-size: 15px;">
+						<div class="container-fluid">
+							<div class="row"> <!-- Select the project -->
+								<div class="col-lg-3">
+									<div class="btn-group" id="gui_refProject">
+										<button type="button" class="btn btn-info"><b>Project</b></button>
+										<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+											data-bs-toggle="dropdown" aria-expanded="false" id="gui_refProjectBtn">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu" id="gui_refProjectBtnContent">
+											<li><a class="dropdown-item" href="#">Project 1</a></li>
+											<li><a class="dropdown-item" href="#">Project 2</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-9">
+									<div id="gui_refProjectSelector">
+
+									</div>
+								</div>
+							</div>
+							<p></p>
+							<div class="row"> <!-- Select the component -->
+								<div class="col-lg-3">
+									<div class="btn-group" id="gui_refComponent">
+										<button type="button" class="btn btn-info"><b>Component</b></button>
+										<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+											data-bs-toggle="dropdown" aria-expanded="false" id="gui_refComponentBtn">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu" id="gui_refComponentBtnContent">
+											<li><a class="dropdown-item" href="#">Component 1</a></li>
+											<li><a class="dropdown-item" href="#">Component 2</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-9">
+									<div id="gui_refComponentSelector">
+
+									</div>
+								</div>
+							</div>
+							<p></p>
+							<div class="row"> <!-- Select the configuration -->
+								<div class="col-lg-3">
+									<div class="btn-group" id="gui_refConfiguration">
+										<button type="button" class="btn btn-info"><b>Configuration</b></button>
+										<button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split"
+											data-bs-toggle="dropdown" aria-expanded="false"
+											id="gui_refConfigurationBtn">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu" id="gui_refConfigurationBtnContent">
+											<li><a class="dropdown-item" href="#">Configuration 1</a></li>
+											<li><a class="dropdown-item" href="#">Configuration 2</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-9">
+									<div id="gui_refConfigurationSelector">
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Project to Check -->
+			<div class="col mb-4">
+				<div class="card">
+					<div class="card-header" style="font-size: 20px;">
+						<table cellpadding="3" style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="vertical-align: middle; width: 15%;">
+										<img src="./resources/icon_check.png" alt="To Check" width="25px">
+									</td>
+									<td style="vertical-align: middle;">
+										<b>Project to Check</b>
+									</td>
+									<td style="vertical-align: middle; text-align: right">
+										<img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Choose Project to Check">
+										<img src="./resources/icon_counter_3.png" alt="Count 3" width="25px">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="card-body" style="font-size: 15px;">
+						<div class="container-fluid">
+							<div class="row"> <!-- Select the project to check -->
+								<div class="col-lg-3">
+									<div class="btn-group" id="gui_chkProject">
+										<button type="button" class="btn btn-secondary"><b>Project</b></button>
+										<button type="button"
+											class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+											data-bs-toggle="dropdown" aria-expanded="false" id="gui_chkProjectBtn">
+											<span class="visually-hidden">Toggle Dropdown</span>
+										</button>
+										<ul class="dropdown-menu" id="gui_chkProjectBtnContent">
+											<li><a class="dropdown-item" href="#">Project 1</a></li>
+											<li><a class="dropdown-item" href="#">Project 2</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-9">
+									<div id="gui_chkProjectSelector">
+									</div>
+								</div>
+							</div>
+							<div class="row"> 
+								<div id="gui_msg_warning-01" style="display: none;">
+									<p></p>
+									<!-- Display warning message if reference project = project to check -->
+									<div class="alert alert-warning alert-dismissible" role="alert">
+										<strong>Warning :</strong> project to check is same than reference project or reference project not defined !
+									</div>									  
+								</div>
+							</div>
+							<p></p>
+							<div class="row"> <!-- Select components to check -->
+								<div class="col-lg-12" id="gui_chkComponentSelectorDetails">
+								</div>
+							</div>
+							<p></p>
+							<div class="row"> <!-- Button start check operation -->
+								<div id="gui_msg_error-01" style="display: none;">
+									<!-- Check Error Messages -->
+									<div class="alert alert-danger alert-dismissible" role="alert">
+										<strong>Reference Data Model not selected :</strong> compare is not possible !
+									</div>									  
+									<p></p>
+								</div>
+								<div class="col-lg-12">
+									<div class="d-flex justify-content-center">
+										<button id="gui_chkStartBtn" type="button" class="btn btn-primary">Start Checker</button>
+									</div>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Reference Data Model Details -->
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col mb-4">
+				<div class="card">
+					<div class="card-header" style="font-size: 20px;">
+						<table cellpadding="3" style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="vertical-align: middle; width: 15%;">
+										<img src="./resources/icon_foundation.png" alt="Reference" width="25px">
+									</td>
+									<td style="vertical-align: middle;">
+										<b>Reference Data Model Details</b>
+									</td>
+									<td style="vertical-align: middle; text-align: right">
+										<img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Display Reference Data Model Summary">
+										<img src="./resources/icon_counter_2.png" alt="Count 2" width="25px">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="card-body" style="font-size: 15px;" id="gui_refDataModelDetails">
+						<div class="accordion" id="gui_refDataModelAccordion">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="gui_refDataModelDataTypeHeader">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#gui_refDataModelDataTypeCollapse" aria-expanded="false"
+										aria-controls="gui_refDataModelDataTypeCollapse">
+										<span>Data Types Details&nbsp;&nbsp;</span><span><img src="./resources/icon_success.png" alt="Success" width="25px" id="gui_refDataModelDataTypeSuccess" style="display: none;"></span>
+									</button>
+								</h2>
+								<div id="gui_refDataModelDataTypeCollapse" class="accordion-collapse collapse"
+									aria-labelledby="gui_refDataModelDataTypeHeader"
+									data-bs-parent="#gui_refDataModelAccordion">
+									<div class="accordion-body" id="gui_refDataModelDataTypeDetails">
+										Data Types not yet loaded !
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="gui_refDataModelAttributeHeader">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#gui_refDataModelAttributeCollapse" aria-expanded="false"
+										aria-controls="gui_refDataModelAttributeCollapse">
+										<span>Attributes Details&nbsp;&nbsp;</span><span><img src="./resources/icon_success.png" alt="Success" width="25px" id="gui_refDataModelAttributeSuccess" style="display: none;"></span>
+									</button>
+								</h2>
+								<div id="gui_refDataModelAttributeCollapse" class="accordion-collapse collapse"
+									aria-labelledby="gui_refDataModelAttributeHeader"
+									data-bs-parent="#gui_refDataModelAccordion">
+									<div class="accordion-body" id="gui_refDataModelAttributeDetails">
+										Attributes not yet loaded !
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="gui_refDataModelArtifactHeader">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#gui_refDataModelArtifactCollapse" aria-expanded="false"
+										aria-controls="gui_refDataModelArtifactCollapse">
+										<span>Artifact Types&nbsp;&nbsp;</span><span><img src="./resources/icon_success.png" alt="Success" width="25px" id="gui_refDataModelArtifactSuccess" style="display: none;"></span>
+									</button>
+								</h2>
+								<div id="gui_refDataModelArtifactCollapse" class="accordion-collapse collapse"
+									aria-labelledby="gui_refDataModelArtifactHeader"
+									data-bs-parent="#gui_refDataModelAccordion">
+									<div class="accordion-body" id="gui_refDataModelArtifactDetails">
+										Artifact Types not yet loaded !
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="gui_refDataModelLinkTypeHeader">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+										data-bs-target="#gui_refDataModelLinkTypeCollapse" aria-expanded="false"
+										aria-controls="gui_refDataModelLinkTypeCollapse">
+										<span>Link Definitions&nbsp;&nbsp;</span><span><img src="./resources/icon_success.png" alt="Success" width="25px" id="gui_refDataModelLinkTypeSuccess" style="display: none;"></span>
+									</button>
+								</h2>
+								<div id="gui_refDataModelLinkTypeCollapse" class="accordion-collapse collapse"
+									aria-labelledby="gui_refDataModelLinkTypeHeader"
+									data-bs-parent="#gui_refDataModelAccordion">
+									<div class="accordion-body" id="gui_refDataModelLinkTypeDetails">
+										Link Definitions not yet loaded !
+									</div>
+								</div>
+							</div>
+						</div>
+						<p></p>
+						<div class="d-flex justify-content-center">
+							<button type="button" class="btn btn-primary" id="gui_exportDataModelReportBtn" disabled>Export Data Model</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col mb-4">
+				<div class="card">
+					<div class="card-header" style="font-size: 20px;">
+						<table cellpadding="3" style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="vertical-align: middle; width: 15%;">
+										<img src="./resources/icon_check.png" alt="Reference" width="25px">
+									</td>
+									<td style="vertical-align: middle;">
+										<b>Components to Check</b>
+									</td>
+									<td style="vertical-align: middle; text-align: right">
+										<img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Display Checked Project Configurations">
+										<img src="./resources/icon_counter_4.png" alt="Count 4" width="25px">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="card-body" style="font-size: 15px;">
+						<div class="container-fluid">
+							<div class="row"> <!-- Checked objects statistics -->
+								<div class="col-lg-12">
+									<table class="table table-striped">
+										<thead>
+										  <tr>
+											<th>Item</th>
+											<th>Count</th>
+										  </tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Number of components</td>
+												<td id="gui_nbchkcomponent">?</td>
+											</tr>
+											<tr>
+												<td><span>Number of streams  </span><span><img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Archived and not archived streams"></span></td>
+												<td id="gui_nbchkstream">?</td>
+											</tr>
+											<tr>
+												<td><span>Number of baselines  </span><span><img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Archived and not archived baselines"></span></td>
+												<td id="gui_nbchkbaseline">?</td>
+											</tr>
+											<tr>
+												<td>Number of archived configurations</td>
+												<td id="gui_nbchkarchivedconf">?</td>
+											</tr>
+										</tbody>
+									  </table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row"> <!-- Report Result display -->
+			<div class="col mb-4">
+				<div class="card">
+					<div class="card-header" style="font-size: 20px;">
+						<table cellpadding="3" style="width: 100%;">
+							<tbody>
+								<tr>
+									<td style="vertical-align: middle; width: 15%;">
+										<img src="./resources/icon_summarize.png" alt="Reference" width="25px">
+									</td>
+									<td style="vertical-align: middle;">
+										<b>Compare Report</b>
+									</td>
+									<td style="vertical-align: middle; text-align: right">
+										<img src="./resources/icon_help.png" alt="Help" width="25px" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Display Compare Report between Reference and Checked Project">
+										<img src="./resources/icon_counter_5.png" alt="Count 5" width="25px">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="card-body" style="font-size: 15px;">
+						<div class="container-fluid">
+							<div class="row"> <!-- Report Summary-->
+								<div id="gui_reportSummary">
+
+								</div>
+							</div>
+							<p></p>
+							<div class="row"> <!-- Report Details-->
+								<div id="gui_reportDetails">
+
+								</div>
+							</div>
+							<p></p>
+							<div class="row"> <!-- Button to export the compare report -->
+								<div class="col-lg-12">
+									<div class="d-flex justify-content-center">
+										<button id="gui_exportCompareReportBtn" type="button" class="btn btn-primary">Export Check Report</button>
+									</div>		
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+]]>
+</Content>
+</Module>
