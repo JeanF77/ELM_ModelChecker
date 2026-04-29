@@ -72,6 +72,7 @@
 				{{#if is_exportable}}
 					<th>URI</th>
 					<th>Description</th>
+					<th>Multi Value</th>
 				{{/if}}
 				<th>Data Type</th>
 			  </tr>
@@ -83,6 +84,7 @@
 					{{#if ../is_exportable}}
 						<td>{{dmItem_geturi}}</td>
 						<td>{{dmItem_getdescription}}</td>
+						<td>{{attribute_ismultivalued}}</td>
 					{{/if}}
 					<td>{{attribute_gettype}}</td>
 				</tr>

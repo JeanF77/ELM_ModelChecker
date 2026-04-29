@@ -279,6 +279,10 @@ class ELMAttributeDefinition extends ELMDataModel {
    is_multiValued () { // ---- Test if is multi valued
       return this.multiValued;
    }
+
+   get_multiValuedText () { // ---- Get multi valued status as text for export
+      return this.multiValued ? "True" : "False";
+   }
 }
 
 /* ---- Artifacts Definitions */

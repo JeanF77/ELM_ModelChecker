@@ -353,6 +353,10 @@ function view_init () {
       return myDataType.get_name();
    });
 
+   Handlebars.registerHelper("attribute_ismultivalued", function () { // ---- To display attribute Multi Value status
+      return this.get_multiValuedText();
+   });
+
    Handlebars.registerHelper("artifact_getattribute", function () { // ---- To display artifact type attributes list
       let myHtmlContent   = "";
       let myAttributeList = [];
