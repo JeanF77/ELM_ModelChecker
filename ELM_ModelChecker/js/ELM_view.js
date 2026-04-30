@@ -331,15 +331,21 @@ function view_init () {
       return this.get_shortid();
    });
 
-   Handlebars.registerHelper("datatype_getbasetype", function () { // ---- To display Data Types values
+   Handlebars.registerHelper("datatype_getbasetype", function (options) { // ---- To display Data Types values
       let myTypeList = [];
 
       if (this.is_enum()) {
-         for (let myEnumValue of this.get_enumValuesList(true)) {
-            myTypeList.push(myEnumValue.title);
-         }
+         let mySortedEntries = this.get_enumValuesList(true);
 
-         return new Handlebars.SafeString(myTypeList.join('<br>'));
+         if (options.data.root.is_exportable) {
+            let myRows = mySortedEntries.map(e => `<tr><td>${e.value}</td><td>${e.title}</td></tr>`).join('');
+            return new Handlebars.SafeString(`<table class="table table-sm table-bordered mb-0"><tbody>${myRows}</tbody></table>`);
+         } else {
+            for (let myEnumValue of mySortedEntries) {
+               myTypeList.push(myEnumValue.title);
+            }
+            return new Handlebars.SafeString(myTypeList.join('<br>'));
+         }
       } else {
          return this.get_valueType();
       }
