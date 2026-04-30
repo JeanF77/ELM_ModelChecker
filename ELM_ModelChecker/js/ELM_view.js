@@ -339,7 +339,7 @@ function view_init () {
 
          if (options.data.root.is_exportable) {
             let myRows = mySortedEntries.map(e => `<tr><td>${e.value}</td><td>${e.title}</td></tr>`).join('');
-            return new Handlebars.SafeString(`<table class="table table-sm table-bordered mb-0"><tbody>${myRows}</tbody></table>`);
+            return new Handlebars.SafeString(`<table class="dm-subtable"><tbody>${myRows}</tbody></table>`);
          } else {
             for (let myEnumValue of mySortedEntries) {
                myTypeList.push(myEnumValue.title);

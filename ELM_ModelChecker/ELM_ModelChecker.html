@@ -224,6 +224,32 @@
 				<meta charset="UTF-8" />
 				<meta http-equiv="Cache-Control" content="no-cache" />
 				<meta http-equiv="Pragma" content="no-cache" />
+				<style>
+					table:not(.dm-subtable) {
+						border-collapse: collapse;
+						width: 100%;
+						border: 2px solid #666;
+					}
+					th, td {
+						border: 1px solid #bbb;
+						padding: 6px 10px;
+						text-align: left;
+					}
+					th {
+						font-weight: bold;
+						text-align: center;
+						background-color: #e8e8e8;
+					}
+					table.dm-subtable {
+						border-collapse: collapse;
+						width: 100%;
+						margin: 0;
+					}
+					table.dm-subtable td {
+						border: 1px dashed #aaa;
+						padding: 2px 6px;
+					}
+				</style>
 			</head>
 			<body>
 				<p><span><b>Project Name : </b></span><span>{{project_name}}</span></p>
