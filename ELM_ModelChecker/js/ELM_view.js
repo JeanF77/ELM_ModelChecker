@@ -331,23 +331,33 @@ function view_init () {
       return this.get_shortid();
    });
 
-   Handlebars.registerHelper("datatype_getbasetype", function (options) { // ---- To display Data Types values
+   Handlebars.registerHelper("datatype_getbasetype", function () { // ---- To display Data Types values
       let myTypeList = [];
 
       if (this.is_enum()) {
          let mySortedEntries = this.get_enumValuesList(true);
 
-         if (options.data.root.is_exportable) {
-            let myRows = mySortedEntries.map(e => `<tr><td>${e.value}</td><td>${e.title}</td></tr>`).join('');
-            return new Handlebars.SafeString(`<table class="dm-subtable"><tbody>${myRows}</tbody></table>`);
-         } else {
-            for (let myEnumValue of mySortedEntries) {
-               myTypeList.push(myEnumValue.title);
-            }
-            return new Handlebars.SafeString(myTypeList.join('<br>'));
+         for (let myEnumValue of mySortedEntries) {
+            myTypeList.push(myEnumValue.title);
          }
+         return new Handlebars.SafeString(myTypeList.join('<br>'));
       } else {
          return this.get_valueType();
+      }
+   });
+
+   Handlebars.registerHelper("datatype_getbasetypevalue", function () { // ---- To display Data Types values (export mode)
+      let myTypeList = [];
+
+      if (this.is_enum()) {
+         let mySortedEntries = this.get_enumValuesList(true);
+         
+         for (let myEnumValue of mySortedEntries) {
+            myTypeList.push(myEnumValue.value);
+         }
+         return new Handlebars.SafeString(myTypeList.join('<br>'));
+      } else { // ---- For non enum, value is the same as type, so no need to display it twice
+         return "";
       }
    });
 

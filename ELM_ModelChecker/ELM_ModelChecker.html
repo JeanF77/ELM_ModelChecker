@@ -46,7 +46,10 @@
 					<th>URI</th>
 					<th>Description</th>
 				{{/if}}
-				<th>Base Data Type</th>
+				<th>Base Data Type Label</th>
+				{{#if is_exportable}}
+					<th>Base Data Type Value</th>
+				{{/if}}
 			  </tr>
 			</thead>
 			<tbody>
@@ -58,6 +61,9 @@
 						<td>{{dmItem_getdescription}}</td>
 					{{/if}}
 					<td>{{datatype_getbasetype}}</td>
+					{{#if ../is_exportable}}
+						<td>{{datatype_getbasetypevalue}}</td>
+					{{/if}}
 				</tr>
 				{{/each}}
 			</tbody>
